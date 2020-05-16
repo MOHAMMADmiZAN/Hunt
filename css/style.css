@@ -10,6 +10,7 @@ ol, ul {
 
 a, a:hover, a:focus {
     text-decoration: none;
+    outline: none;
 
 }
 
@@ -200,7 +201,6 @@ nav {
 #banner-part .overlay .arrow-prev a {
     color: #000;
     font-size: 30px;
-
 
 }
 
