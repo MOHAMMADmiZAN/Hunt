@@ -189,6 +189,7 @@ nav {
     position: absolute;
     top: 50%;
     left: 30px;
+    transition: .4s;
 
 }
 
@@ -201,6 +202,7 @@ nav {
     position: absolute;
     top: 50%;
     right: 30px;
+    transition: .4s;
 }
 
 #banner-part .overlay .arrow-prev a {
@@ -212,10 +214,18 @@ nav {
 #banner-part .overlay .arrow-next a {
     color: #000;
     font-size: 30px;
+    transition: .4s;
 
 
 }
 
+#banner-part .overlay .arrow-prev:hover {
+    background: rgb(254, 198, 0);
+}
+
+#banner-part .overlay .arrow-next:hover {
+    background: rgb(254, 198, 0);
+}
 
 /*=================================slider-end=============================*/
 

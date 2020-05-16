@@ -7,6 +7,7 @@ $('#banner-part').slick({
     arrows: true,
     prevArrow: $('.arrow-prev'),
     nextArrow: $('.arrow-next'),
+    fade: true,
 
 
 });
