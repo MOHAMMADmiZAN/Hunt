@@ -1,6 +1,6 @@
 $('#banner-part').slick({
     dots: false,
-    infinite: false,
+    infinite: true,
     speed: 300,
     slidesToShow: 1,
     slidesToScroll: 1,
