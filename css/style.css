@@ -76,6 +76,10 @@ nav {
 
 
 @media (min-width: 576px) and (max-width: 991px) {
+    nav {
+        background: #000000;
+    }
+
     nav .container button {
         color: #ffffff;
         outline: none;
