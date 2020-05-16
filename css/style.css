@@ -101,10 +101,10 @@ nav {
     padding: 245px 0 185px 0;
     text-align: center;
     color: white;
+    position: relative;
 
 
 }
-
 #banner-part .overlay .container .text h2 {
     font-family: 'Raleway', sans-serif;
     font-size: 36px;
@@ -173,7 +173,45 @@ nav {
     left: 0;
 }
 
-/*=====================================slider-arrows====================================*/
+/*=============================slider-arrow=============================== */
+#banner-part .overlay .arrow-prev {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 30px;
+}
+
+#banner-part .overlay .arrow-next {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    right: 30px;
+}
+
+#banner-part .overlay .arrow-prev a {
+    color: #000;
+    font-size: 30px;
+
+
+}
+
+#banner-part .overlay .arrow-next a {
+    color: #000;
+    font-size: 30px;
+
+
+}
+
+
+/*=================================slider-end=============================*/
 
 
 /*==============================================*/
