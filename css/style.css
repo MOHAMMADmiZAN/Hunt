@@ -96,12 +96,12 @@ nav {
 /*                                   Small-Nav-bar End ===============================================*/
 /*==============================================*/
 /*                                   Banner-Part Start ===============================================*/
-.banner {
+#banner-part .banner {
     background: url("../images/b_bg.png") no-repeat center;
     background-size: cover;
 }
 
-.overlay {
+#banner-part .overlay {
     background-color: rgba(0, 0, 0, .6);
     padding: 245px 0 185px 0;
     text-align: center;
@@ -110,6 +110,7 @@ nav {
 
 
 }
+
 #banner-part .overlay .container .text h2 {
     font-family: 'Raleway', sans-serif;
     font-size: 36px;
@@ -128,7 +129,7 @@ nav {
 }
 
 #banner-part .overlay .container .text p {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     font-weight: 400;
     width: 540px;
@@ -234,3 +235,154 @@ nav {
 
 /*==============================================*/
 /*                                   Banner-Part End ===============================================*/
+/*==============================================*/
+/*                                   About-Part start===============================================*/
+
+#about-us .container .a_text {
+    text-align: center;
+}
+
+#about-us .container .a_text h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 35px;
+    font-weight: 500;
+
+}
+
+#about-us .container .a_text p {
+    width: 565px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    margin: 35px auto;
+}
+
+#about-us .container .round {
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+    position: relative;
+}
+
+#about-us .container .round .img {
+    height: 280px;
+    width: 280px;
+    background: url("../images/about.png") no-repeat center;
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#about-us .container .round .img .overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .3);
+    border-radius: 50%;
+
+
+}
+
+#about-us .container .text {
+    padding: 45px 35px 45px 35px;
+    background-color: #eeeeee;
+    text-align: center;
+    margin: 30px 0;
+    border-radius: 5px;
+    position: relative;
+}
+
+#about-us .container .text h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: black;
+
+}
+
+#about-us .container .text p {
+    width: 278px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    margin-top: 30px;
+}
+
+#about-us .container .text .triangle {
+    width: 30px;
+    height: 30px;
+    background: #eeeeee;
+}
+
+#about-us .container .text .top {
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+}
+
+#about-us .container .text .dot {
+    font-size: 15px;
+    color: #000;
+    transition: .4s;
+    z-index: 1;
+
+}
+
+#about-us .container .text .du {
+    position: absolute;
+    bottom: -41px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#about-us .container .text .left {
+    position: absolute;
+    top: 50%;
+    right: -15px;
+    transform: translateY(-50%) rotate(45deg);
+}
+
+#about-us .container .text .dl {
+    position: absolute;
+    right: -41px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#about-us .container .text .right {
+    position: absolute;
+    top: 50%;
+    left: -15px;
+    transform: translateY(-50%) rotate(45deg);
+}
+
+#about-us .container .text .dr {
+    position: absolute;
+    left: -41px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#about-us .container .text .bottom {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+}
+
+#about-us .container .text .dd {
+    position: absolute;
+    top: -41px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#about-us .container .text:hover .dot {
+    color: #fec600;
+}
+
+/*==============================================*/
+/*                                   About-Part End===============================================*/
+
