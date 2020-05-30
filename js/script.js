@@ -33,7 +33,9 @@ $(document).ready(function () {
 // }
 
 // preloader-end //
-setTimeout(function () {
-    $('#preloader').fadeOut();
-    // $('#loader').fadeOut('slow');
-}, 10000);
+function pre() {
+    setTimeout(function () {
+        $('#preloader').fadeOut();
+        // $('#loader').fadeOut('slow');
+    }, 3000);
+}
