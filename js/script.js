@@ -26,10 +26,14 @@ $(document).ready(function () {
     );
 });
 // preloader-start//
-let preloader = document.getElementById('preloader');
-
-function pre() {
-    preloader.style.display = 'none';
-}
+// let preloader = document.getElementById('preloader');
+//
+// function pre() {
+//     preloader.style.display = 'none';
+// }
 
 // preloader-end //
+setTimeout(function () {
+    $('#preloader').fadeOut();
+    // $('#loader').fadeOut('slow');
+}, 10000);
