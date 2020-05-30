@@ -10,3 +10,26 @@ $('#banner-part').slick({
 
 
 });
+// venobox//
+$(document).ready(function () {
+    $('.venobox').venobox(
+        {
+            spinner: 'wandering-cubes',
+            framewidth: '800px',
+            frameheight: '800px',
+            border: '10px',
+            share: [],
+            infinigall: true,
+            closeColor: '#fff',
+            numeratio: true,
+        }
+    );
+});
+// preloader-start//
+let preloader = document.getElementById('preloader');
+
+function pre() {
+    preloader.style.display = 'none';
+}
+
+// preloader-end //
