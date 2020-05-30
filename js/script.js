@@ -37,5 +37,5 @@ function pre() {
     setTimeout(function () {
         $('#preloader').fadeOut();
         // $('#loader').fadeOut('slow');
-    }, 3000);
+    }, 4000);
 }
