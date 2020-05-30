@@ -31,11 +31,10 @@ $(document).ready(function () {
 // function pre() {
 //     preloader.style.display = 'none';
 // }
-
-// preloader-end //
 function pre() {
     setTimeout(function () {
         $('#preloader').fadeOut();
         // $('#loader').fadeOut('slow');
     }, 4000);
 }
+// preloader-end //
