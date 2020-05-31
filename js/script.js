@@ -37,4 +37,17 @@ function pre() {
         // $('#loader').fadeOut('slow');
     }, 4000);
 }
+
 // preloader-end //
+//service Part Slider //
+$('.service-slide').slick({
+    dots: false,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: true,
+    vertical: true,
+
+
+});

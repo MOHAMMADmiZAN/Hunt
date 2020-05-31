@@ -541,3 +541,106 @@ nav {
 
 /*==============================================*/
 /*                                   Portfolio-Part End===============================================*/
+/*==============================================*/
+/*                                   Service-Part Start===============================================*/
+
+#service-part .title {
+    margin: 50px 0;
+}
+
+#service-part .container .service-slide {
+    margin: 60px 0;
+}
+
+#service-part .container .service-slide .service-tabs {
+    margin: 30px 0;
+}
+
+#service-part .container .service-slide .service-title {
+    height: 215px;
+    position: relative;
+}
+
+#service-part .container .service-slide .service-title h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    position: absolute;
+    top: 50%;
+    right: 35px;
+
+}
+
+#service-part .container .service-slide .service-image {
+    height: 215px;
+    position: relative;
+}
+
+#service-part .container .service-slide .img {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: #eeeeee;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#service-part .container .service-slide .img img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#service-part .container .service-slide .service-text {
+    padding: 50px 30px;
+    background-color: #eeeeee;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+#service-part .container .service-slide .service-text::after {
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: -4px;
+    content: "";
+    background-color: #eeeeee;
+    transform: rotate(45deg) translateX(-50%);
+}
+
+#service-part .container .service-slide .rev-h3 h3 {
+    position: absolute;
+    top: 50%;
+    left: 35px;
+
+}
+
+#service-part .container .service-slide .res-p {
+    padding: 50px 30px;
+    background-color: #eeeeee;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+#service-part .container .service-slide.rev-p::after {
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    right: -4px;
+    content: "";
+    background-color: #eeeeee;
+    transform: rotate(45deg) translateX(-50%);
+}
+
+
+/*==============================================*/
+/*                                   Service-Part End===============================================*/
