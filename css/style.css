@@ -641,6 +641,10 @@ nav {
     transform: rotate(45deg) translateX(-50%);
 }
 
+#service-part .container .service-slide .slick-current .img {
+    transform: scale(1.4);
+    background-color: #fec600;
+}
 
 /*==============================================*/
 /*                                   Service-Part End===============================================*/

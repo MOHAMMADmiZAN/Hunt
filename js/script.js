@@ -48,6 +48,8 @@ $('.service-slide').slick({
     slidesToScroll: 1,
     arrows: true,
     vertical: true,
+    centerMode: true,
+    centerPadding: 0,
 
 
 });
