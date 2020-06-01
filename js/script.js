@@ -39,8 +39,8 @@ function pre() {
 }
 
 // preloader-end //
-//service Part Slider //
-$('.service-slide').slick({
+// service Part Slider //
+$('.service-slider').slick({
     dots: false,
     infinite: true,
     speed: 300,
