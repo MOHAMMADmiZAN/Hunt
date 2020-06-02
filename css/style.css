@@ -310,14 +310,14 @@ nav {
     transition: .4s;
 }
 
-#banner-part .overlay .arrow-prev a {
+#banner-part .overlay .arrow-prev i {
     color: #000;
     font-size: 30px;
     line-height: 40px;
     transition: 0.4s;
 }
 
-#banner-part .overlay .arrow-next a {
+#banner-part .overlay .arrow-next i {
     color: #000;
     font-size: 30px;
     transition: .4s;
@@ -545,13 +545,28 @@ nav {
 /*                                   Service-Part Start===============================================*/
 
 #service-part .title {
-    margin: 50px 0;
+    margin: 100px 0;
+}
+
+#service-part .line {
+    background: url("../images/line.png") no-repeat center;
+    height: 800px;
+    width: 1px;
+    position: absolute;
+    top: 390px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#service-part .service-slider {
+    margin: 30px 0;
 }
 
 #service-part .service-tab {
     display: flex;
     justify-content: space-between;
     margin: 30px 0;
+    outline: none;
 }
 
 #service-part .service-name {
@@ -565,12 +580,12 @@ nav {
 
 #service-part .service-name h4 {
     font-family: 'Raleway', sans-serif;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 18px;
     position: absolute;
     top: 50%;
-    right: 0;
-    transform: translateX(-50%);
+    right: -10%;
+    transform: translate(-50%, -50%);
 }
 
 #service-part .service-image {
@@ -590,15 +605,18 @@ nav {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    transition: 0.4s;
+
 
 }
 
 #service-part .service-text {
     width: 40%;
-    height: 215px;
+    /*height: 215px;*/
     background-color: #eeeeee;
     padding: 50px 30px;
     position: relative;
+    box-sizing: border-box;
 
 }
 
@@ -614,24 +632,24 @@ nav {
     background-color: #eeeeee;
     position: absolute;
     top: 50%;
-    left: 0;
-    transform: translateX(-50%) rotate(45deg);
+    left: .5%;
+    transform: translate(-50%, -50%) rotate(45deg);
     border-radius: 5px;
 }
 
 #service-part .service-tab .rev h4 {
     position: absolute;
     top: 50%;
-    right: 60%;
-    transform: translateX(-50%);
+    right: 55%;
+    transform: translate(-50%, -50%);
 
 }
 
 #service-part .service-tab .rev-t .box {
     position: absolute;
     top: 50%;
-    left: 100%;
-    transform: translateX(-50%) rotate(45deg);
+    left: 99.5%;
+    transform: translate(-50%, -50%) rotate(45deg);
     border-radius: 5px;
 }
 
@@ -639,9 +657,69 @@ nav {
     display: inline-block;
 }
 
+#service-part .slick-center .service-text {
+    filter: drop-shadow(0 0 2px black);
+}
+
 #service-part .slick-center .img {
     transform: scale(1.2) translate(-50%, -50%);
     background: #fec600;
+    transition: 0.4s;
+}
+
+#service-part .fr-slide {
+    position: relative;
+}
+
+#service-part .arrow-up {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid black;
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    cursor: pointer;
+    transition: .4s;
+}
+
+#service-part .arrow-up i {
+    font-size: 30px;
+    color: #000;
+    line-height: 40px;
+}
+
+#service-part .arrow-down {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid black;
+    position: absolute;
+    bottom: -13px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2;
+    cursor: pointer;
+    transition: .4s;
+}
+
+#service-part .arrow-down i {
+    font-size: 30px;
+    color: #000;
+    line-height: 40px;
+}
+
+#service-part .arrow-up:hover {
+    background-color: rgb(254, 198, 0);
+    border-color: rgb(254, 198, 0);
+}
+
+#service-part .arrow-down:hover {
+    background-color: rgb(254, 198, 0);
+    border-color: rgb(254, 198, 0);
 }
 
 /*==============================================*/

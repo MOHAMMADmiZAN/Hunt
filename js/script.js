@@ -50,6 +50,10 @@ $('.service-slider').slick({
     vertical: true,
     centerMode: true,
     centerPadding: 0,
+    // prevArrow:'<i class="fa fa-angle-up prev" aria-hidden="true"></i>',
+    // nextArrow:'<i class="fa fa-angle-right next" aria-hidden="true"></i>',
+    prevArrow: $('.arrow-up'),
+    nextArrow: $('.arrow-down'),
 
 
 });
