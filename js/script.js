@@ -55,3 +55,19 @@ $('.service-slider').slick({
 
 
 });
+// Tm_slide_left//
+$('.left_slide').slick({
+    dots: false,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: true,
+    vertical: true,
+    centerMode: true,
+    centerPadding: 0,
+    prevArrow: '<i class="fa fa-angle-up prev" aria-hidden="true"></i>',
+    nextArrow: '<i class="fas fa-angle-down next"></i>',
+
+
+});
