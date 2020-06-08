@@ -755,7 +755,7 @@ nav {
 #tm_slide .tm_overlay {
     width: 100%;
     height: 100%;
-    padding: 100px 0;
+    padding: 120px 0 100px 0;
     background-color: rgba(0, 0, 0, 0.7);
 }
 
@@ -783,7 +783,7 @@ nav {
 #tm_slide .images img {
     margin-top: 10px;
     position: absolute;
-    top: 10px;
+    top: 0;
     left: 50%;
     transform: translateX(-50%);
 
@@ -861,7 +861,7 @@ nav {
 }
 
 #tm-shape .t-b {
-    top: -680px;
+    top: -700px;
     transform-origin: left top;
 }
 
