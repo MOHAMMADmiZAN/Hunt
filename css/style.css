@@ -865,6 +865,11 @@ nav {
     transform-origin: left top;
 }
 
+#tm_slide .r_s {
+    display: flex;
+    align-items: center;
+}
+
 #tm_slide .right_slide .tm_text {
     width: 830px;
     height: 340px;
