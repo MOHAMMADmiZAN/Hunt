@@ -870,6 +870,7 @@ nav {
     height: 340px;
     background-color: whitesmoke;
     padding: 60px 30px;
+    position: relative;
 }
 
 #tm_slide .right_slide .tm_text h2 {
@@ -901,11 +902,6 @@ nav {
 #tm_slide .right_slide .tm_text .sig {
     text-align: right;
 }
-
-#tm_slide .right_slide .tm_text {
-    position: relative;
-}
-
 #tm_slide .right_slide .tm_text .quta {
     position: absolute;
     top: 50%;
