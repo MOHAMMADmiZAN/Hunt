@@ -865,6 +865,54 @@ nav {
     transform-origin: left top;
 }
 
+#tm_slide .right_slide .tm_text {
+    width: 830px;
+    height: 340px;
+    background-color: whitesmoke;
+    padding: 60px 30px;
+}
+
+#tm_slide .right_slide .tm_text h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+
+}
+
+#tm_slide .right_slide .tm_text span {
+    font-size: 16px;
+    color: rgba(254, 198, 0);
+}
+
+#tm_slide .right_slide .tm_text h4 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+
+}
+
+#tm_slide .right_slide .tm_text p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 30px 0;
+}
+
+#tm_slide .right_slide .tm_text .sig {
+    text-align: right;
+}
+
+#tm_slide .right_slide .tm_text {
+    position: relative;
+}
+
+#tm_slide .right_slide .tm_text .quta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 /*==============================================*/
 /*                                  Tm_slide End===============================================*/
 

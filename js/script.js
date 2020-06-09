@@ -68,6 +68,21 @@ $('.left_slide').slick({
     centerPadding: 0,
     prevArrow: '<i class="fa fa-angle-up prev" aria-hidden="true"></i>',
     nextArrow: '<i class="fas fa-angle-down next"></i>',
+    asNavFor: '.right_slide',
+
+
+});
+$('.right_slide').slick({
+    dots: false,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    vertical: true,
+    centerMode: true,
+    centerPadding: 0,
+    asNavFor: '.left_slide',
+    arrows: false,
 
 
 });
