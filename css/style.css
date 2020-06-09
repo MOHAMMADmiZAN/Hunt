@@ -906,6 +906,7 @@ nav {
 #tm_slide .right_slide .tm_text .sig {
     text-align: right;
 }
+
 #tm_slide .right_slide .tm_text .quta {
     position: absolute;
     top: 50%;
@@ -915,4 +916,154 @@ nav {
 
 /*==============================================*/
 /*                                  Tm_slide End===============================================*/
+/*==============================================*/
+/*                                  Price part Start===============================================*/
+#price-part .price-tab {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
 
+#price-part .price-tab .price-item {
+    width: 32%;
+    background-color: #f1f1f1;
+}
+
+#price-part .price-item .p-title {
+    width: 100%;
+    height: 140px;
+    background-color: #353535;
+    clip-path: polygon(0 0, 100% 0%, 100% 66%, 0 100%);
+    transition: 0.4s;
+}
+
+#price-part .price-item .p-title h4 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #f1f1f1;
+    text-align: center;
+    padding: 30px 0;
+    transition: 0.4s;
+}
+
+#price-part .price-item .p-details {
+    width: 100%;
+    height: 255px;
+    background-color: #f1f1f1;
+    position: relative;
+
+
+}
+
+#price-part .price-item .p-details .b-cir {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #353535;
+    background-color: #f1f1f1;
+    border-radius: 50%;
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+
+
+}
+
+#price-part .price-item .p-details .s-cir {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: #353535;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+
+}
+
+#price-part .price-item .p-details .s-cir h5 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 29px;
+    font-weight: 500;
+    color: #f1f1f1;
+    transition: 0.4s;
+
+}
+
+#price-part .price-item .p-details .s-cir p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    color: #f1f1f1;
+    transition: 0.4s;
+
+}
+
+#price-part .price-item .p-text {
+    text-align: center;
+}
+
+#price-part .price-item .p-text p {
+    padding: 15px 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    transition: 0.4s;
+
+}
+
+#price-part .price-item .p-footer {
+    width: 100%;
+    height: 100px;
+    background-color: #353535;
+    clip-path: polygon(0 53%, 100% 0%, 100% 100%, 0 100%);
+    transition: 0.4s;
+
+}
+
+#price-part .price-item .p-footer h4 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #f1f1f1;
+    text-align: center;
+    padding-top: 55px;
+    transition: 0.4s;
+}
+
+#price-part .price-item:hover .p-title {
+    background-color: rgb(254, 198, 0);
+}
+
+#price-part .price-item:hover .s-cir {
+    background-color: rgb(254, 198, 0);
+
+}
+
+#price-part .price-item:hover .b-cir {
+    border-color: rgb(254, 198, 0);
+}
+
+#price-part .price-item:hover .p-footer {
+    background-color: rgb(254, 198, 0);
+}
+
+#price-part .price-item:hover .s-cir h5 {
+    color: #353535;
+}
+
+#price-part .price-item:hover h4 {
+    color: #353535;
+}
+
+#price-part .price-item:hover .s-cir p {
+    color: #353535;
+}
+
+/*==============================================*/
+/*                                  Price part Start===============================================*/
