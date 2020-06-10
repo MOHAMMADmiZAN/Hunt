@@ -1329,5 +1329,50 @@ nav {
 
 }
 
+#footer .f-footer {
+    text-align: center;
+    padding: 50px 0 30px 0;
+}
+
+#footer .f-footer h5 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: white;
+}
+
+#footer .f-footer .icon span {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #fff;
+    color: black;
+    text-align: center;
+    line-height: 35px;
+    font-size: 18px;
+    display: inline-block;
+    margin: 15px;
+    transition: 0.4s;
+}
+
+#footer .f-footer .icon span:hover {
+    background-color: rgb(254, 198, 0);
+}
+
+#footer .f-box {
+    width: 100%;
+    height: 50px;
+    background-color: #353535;
+    text-align: center;
+}
+
+#footer .f-box p {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 50px;
+    color: white;
+}
+
 /*==============================================*/
 /*                                  footer-part end ===============================================*/
