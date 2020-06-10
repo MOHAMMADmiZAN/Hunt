@@ -1147,3 +1147,107 @@ nav {
 
 /*==============================================*/
 /*                                  counter part End===============================================*/
+/*==============================================*/
+/*                                  our team part  start===============================================*/
+#team-part .team-tab {
+    width: 270px;
+    border: 1px solid #c1bcbc;
+    margin: 50px 0;
+}
+
+#team-part .team-tab .img {
+    width: 100%;
+    height: 270px;
+    background-color: #f1f1f1;
+    clip-path: polygon(0 0, 100% 0%, 100% 80%, 0% 100%);
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+#team-part .team-tab .img img {
+    margin-top: 5px;
+}
+
+#team-part .team-tab .img-overlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(254, 198, 0, 0.4);
+    opacity: 0;
+    transition: 0.4s;
+}
+
+#team-part .team-tab .img-overlay span {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    line-height: 40px;
+    font-size: 18px;
+}
+
+#team-part .team-tab .team-text {
+    border-top: none;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+#team-part .team-tab .team-text h5 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+
+}
+
+#team-part .team-tab .team-text p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 10px;
+    color: #757575;
+}
+
+#team-part .team-tab .icon span {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    border: 1px solid black;
+    font-size: 18px;
+    text-align: center;
+    line-height: 35px;
+    color: black;
+    margin: 10px;
+    display: inline-block;
+    transition: 0.4s;
+}
+
+#team-part .team-tab .icon {
+    display: none;
+}
+
+#team-part .team-tab:hover .img-overlay {
+    opacity: 1;
+}
+
+#team-part .team-tab:hover .icon {
+    display: block;
+}
+
+#team-part .team-tab .icon span:hover {
+    background-color: rgb(254, 198, 0);
+    border-color: rgb(254, 198, 0);
+}
+
+
+/*==============================================*/
+/*                                  our team part End===============================================*/
