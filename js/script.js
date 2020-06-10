@@ -86,3 +86,8 @@ $('.right_slide').slick({
 
 
 });
+///counter-up//
+$('.up').counterUp({
+    delay: 10,
+    time: 1000
+});
