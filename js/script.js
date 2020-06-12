@@ -160,4 +160,7 @@ $('.th-slide').slick({
 
 
 //scroolpy
-$('body').scrollspy({target: '.navbar', offset: 200,})
+$('body').scrollspy({
+    target: '.navbar',
+    offset: 100
+})
