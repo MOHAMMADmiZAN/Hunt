@@ -1071,7 +1071,7 @@ nav {
 /*                                  counter part Start===============================================*/
 #counter {
     width: 100%;
-    height: 180px;
+    height: 150px;
     background-size: cover;
     background: url("../images/counter.png") no-repeat top;
     margin: 50px 0;
@@ -1261,7 +1261,7 @@ nav {
 /*                                  theme-forest-part start ===============================================*/
 #theme {
     width: 100%;
-    height: 180px;
+    height: 150px;
     background-color: #f1f1f1;
     padding: 30px 0;
     transform: skewY(-3deg);
@@ -1289,95 +1289,113 @@ nav {
 /*                                  theme-forest-part start ===============================================*/
 /*==============================================*/
 /*                                  footer-part start ===============================================*/
-#footer {
+#footer-head {
     width: 100%;
+    height: 150px;
     background-color: #222222;
+    transform: skewY(-3deg);
+    text-align: center;
+    line-height: 150px;
+    border-bottom: 1px solid #4a4a4a;
+}
+
+#footer-head img {
+    transform: skewY(3deg);
+}
+
+#footer {
+    background-color: #222222;
+    padding: 30px 0;
+    position: relative;
     margin-top: 50px;
 }
 
-#footer .footer-head {
-    width: 100%;
-    height: 180px;
+#footer .tabs {
     text-align: center;
-    line-height: 180px;
-    /*border-bottom: 1px solid #d8d8d8;*/
-    /*transform: skewY(-3deg);*/
-    background: #222222;
+    border-right: 1px solid #4a4a4a;
 }
 
-#footer .mid {
-    background-color: #222222;
-    text-align: center;
-    border-right: 1px solid #d8d8d8;
-
-}
-
-#footer .mid span {
+#footer span {
     height: 35px;
     width: 35px;
+    border-radius: 50%;
+    background-color: rgb(254, 198, 0);
     font-size: 18px;
     text-align: center;
     line-height: 35px;
-    background-color: rgb(254, 198, 0);
-    color: #222222;
     display: inline-block;
-    border-radius: 50%;
-    margin: 10px 0;
-
+    margin: 30px 0;
 }
 
-#footer .mid .text p {
+#footer .f-text p {
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
     font-size: 16px;
-    color: #ffffff;
-
-
-}
-
-#footer .f-footer {
-    text-align: center;
-    padding: 50px 0 30px 0;
-}
-
-#footer .f-footer h5 {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 500;
-    font-size: 20px;
     color: white;
+
 }
 
-#footer .f-footer .icon span {
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    background-color: #fff;
-    color: black;
+#footer::after {
+    width: 100%;
+    height: 140px;
+    content: "";
+    position: absolute;
+    top: -25%;
+    left: 0;
+    background: #222;
+    z-index: -1;
+    transform: skewY(-3deg);
+
+}
+
+#footer .footer-mid {
     text-align: center;
-    line-height: 35px;
-    font-size: 18px;
-    display: inline-block;
-    margin: 15px;
-    transition: 0.4s;
+    margin-top: 50px;
+
 }
 
-#footer .f-footer .icon span:hover {
+#footer .footer-mid h5 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+
+}
+
+#footer .footer-mid span {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    margin: 20px 15px;
+    display: inline-block;
+    color: #222222;
+}
+
+#footer .footer-mid span:hover {
     background-color: rgb(254, 198, 0);
 }
 
-#footer .f-box {
+#footer-bottom {
     width: 100%;
     height: 50px;
-    background-color: #353535;
     text-align: center;
+    background-color: #353535;
+
+
 }
 
-#footer .f-box p {
+#footer-bottom p {
     font-family: 'Raleway', sans-serif;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 13px;
     line-height: 50px;
     color: white;
+
 }
 
 /*==============================================*/
