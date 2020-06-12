@@ -103,7 +103,7 @@ $(document).ready(
         }
     )
 );
-//animation scroll js
+// animation scroll js
 var html_body = $('html, body');
 $('.nav-item a').on('click', function () {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
@@ -159,8 +159,20 @@ $('.th-slide').slick({
 });
 
 
-//scroolpy
+scroolpy
 $('body').scrollspy({
     target: '.navbar',
     offset: 100
 })
+
+// offsetValue = 40;
+// $('body').data().scrollspy.options.offset = offsetValue;
+// // force scrollspy to recalculate the offsets to your targets
+// $('body').data().scrollspy.process();
+// var offset = 80;
+// //
+// $('.navbar li a').click(function(event) {
+//     event.preventDefault();
+//     $($(this).attr('href'))[0].scrollIntoView();
+//     scrollBy(0, -offset);
+// });
