@@ -1232,7 +1232,10 @@ nav {
 }
 
 #team-part .team-tab .icon {
-    display: none;
+    margin-top: -50px;
+    opacity: 0;
+    transition: .4s;
+    /*display: none;*/
 }
 
 #team-part .team-tab:hover .img-overlay {
@@ -1240,7 +1243,10 @@ nav {
 }
 
 #team-part .team-tab:hover .icon {
-    display: block;
+    margin-top: 0;
+    opacity: 1;
+    /*display: block;*/
+
 }
 
 #team-part .team-tab .icon span:hover {
