@@ -5,9 +5,8 @@ $('#banner-part').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: true,
-    prevArrow: $('.arrow-prev'),
-    nextArrow: $('.arrow-next'),
-
+    prevArrow: '<i class="fas fa-arrow-left prev"></i>',
+    nextArrow: '<i class="fas fa-arrow-right next"></i>',
 
 });
 // venobox//
@@ -31,12 +30,12 @@ $(document).ready(function () {
 // function pre() {
 //     preloader.style.display = 'none';
 // }
-function pre() {
-    setTimeout(function () {
-        $('#preloader').fadeOut();
-        // $('#loader').fadeOut('slow');
-    }, 4000);
-}
+// function pre() {
+//     setTimeout(function () {
+//         $('#preloader').fadeOut();
+//         // $('#loader').fadeOut('slow');
+//     }, 4000);
+// }
 
 // preloader-end //
 // service Part Slider //
@@ -91,3 +90,74 @@ $('.up').counterUp({
     delay: 10,
     time: 1000
 });
+//stiky-header//
+$(document).ready(
+    $(window).scroll(
+        function () {
+            if ($(window).scrollTop() > 300) {
+                $('.st-menu').addClass('stiky')
+            } else {
+                $('.st-menu').removeClass('stiky')
+            }
+
+        }
+    )
+);
+//animation scroll js
+var html_body = $('html, body');
+$('.nav-item a').on('click', function () {
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+        if (target.length) {
+            html_body.animate({
+                scrollTop: target.offset().top - 0
+            }, 1500);
+            return false;
+        }
+    }
+});
+
+$(document).ready(
+    //back to top fadetoogle//
+    $(window).scroll(
+        function () {
+            if ($(window).scrollTop() > 100) {
+                $('.back-top').fadeIn();
+
+
+            } else {
+                $('.back-top').fadeOut();
+            }
+
+
+        }
+    )
+);
+$(document).ready(
+    //back to top effect//
+    $('.back-top').click(
+        function () {
+            $('html,body').animate({scrollTop: 0}, 1500);
+
+        }
+    )
+);
+
+$('.th-slide').slick({
+    dots: false,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    centerMode: true,
+    centerPadding: '0',
+    focusOnSelect: true,
+});
+
+
+//scroolpy
+$('body').scrollspy({target: '.navbar', offset: 200,})

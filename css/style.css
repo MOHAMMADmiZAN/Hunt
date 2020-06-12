@@ -20,6 +20,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 body {
     overflow-x: hidden;
+    position: relative;
 }
 
 .title {
@@ -44,84 +45,84 @@ body {
 /*==============================================*/
 /*                                   pre-loader start ===============================================*/
 
-#preloader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    z-index: 9999;
-    background-color: #fff;
-}
+/*#preloader {*/
+/*    position: fixed;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    width: 100%;*/
+/*    height: 100vh;*/
+/*    z-index: 9999;*/
+/*    background-color: #fff;*/
+/*}*/
 
-#loader {
-    display: block;
-    position: relative;
-    left: 50%;
-    top: 50%;
-    width: 100px;
-    height: 100px;
-    margin: -75px 0 0 -75px;
-    border-radius: 50%;
-    border: 3px solid transparent;
-    border-top-color: rgb(254, 198, 0);
-    -webkit-animation: spin 2s linear infinite;
-    animation: spin 2s linear infinite;
-}
+/*#loader {*/
+/*    display: block;*/
+/*    position: relative;*/
+/*    left: 50%;*/
+/*    top: 50%;*/
+/*    width: 100px;*/
+/*    height: 100px;*/
+/*    margin: -75px 0 0 -75px;*/
+/*    border-radius: 50%;*/
+/*    border: 3px solid transparent;*/
+/*    border-top-color: rgb(254, 198, 0);*/
+/*    -webkit-animation: spin 2s linear infinite;*/
+/*    animation: spin 2s linear infinite;*/
+/*}*/
 
-#loader:before {
-    content: "";
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    right: 5px;
-    bottom: 5px;
-    border-radius: 50%;
-    border: 3px solid transparent;
-    border-top-color: #333333;
-    -webkit-animation: spin 3s linear infinite;
-    animation: spin 3s linear infinite;
-}
+/*#loader:before {*/
+/*    content: "";*/
+/*    position: absolute;*/
+/*    top: 5px;*/
+/*    left: 5px;*/
+/*    right: 5px;*/
+/*    bottom: 5px;*/
+/*    border-radius: 50%;*/
+/*    border: 3px solid transparent;*/
+/*    border-top-color: #333333;*/
+/*    -webkit-animation: spin 3s linear infinite;*/
+/*    animation: spin 3s linear infinite;*/
+/*}*/
 
-#loader:after {
-    content: "";
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    right: 15px;
-    bottom: 15px;
-    border-radius: 50%;
-    border: 3px solid transparent;
-    border-top-color: rgb(254, 198, 0);
-    -webkit-animation: spin 1.5s linear infinite;
-    animation: spin 1.5s linear infinite;
-}
+/*#loader:after {*/
+/*    content: "";*/
+/*    position: absolute;*/
+/*    top: 15px;*/
+/*    left: 15px;*/
+/*    right: 15px;*/
+/*    bottom: 15px;*/
+/*    border-radius: 50%;*/
+/*    border: 3px solid transparent;*/
+/*    border-top-color: rgb(254, 198, 0);*/
+/*    -webkit-animation: spin 1.5s linear infinite;*/
+/*    animation: spin 1.5s linear infinite;*/
+/*}*/
 
-@-webkit-keyframes spin {
-    0% {
-        -webkit-transform: rotate(0deg);
-        -ms-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-    100% {
-        -webkit-transform: rotate(360deg);
-        -ms-transform: rotate(360deg);
-        transform: rotate(360deg);
-    }
-}
+/*@-webkit-keyframes spin {*/
+/*    0% {*/
+/*        -webkit-transform: rotate(0deg);*/
+/*        -ms-transform: rotate(0deg);*/
+/*        transform: rotate(0deg);*/
+/*    }*/
+/*    100% {*/
+/*        -webkit-transform: rotate(360deg);*/
+/*        -ms-transform: rotate(360deg);*/
+/*        transform: rotate(360deg);*/
+/*    }*/
+/*}*/
 
-@keyframes spin {
-    0% {
-        -webkit-transform: rotate(0deg);
-        -ms-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-    100% {
-        -webkit-transform: rotate(360deg);
-        -ms-transform: rotate(360deg);
-        transform: rotate(360deg);
-    }
-}
+/*@keyframes spin {*/
+/*    0% {*/
+/*        -webkit-transform: rotate(0deg);*/
+/*        -ms-transform: rotate(0deg);*/
+/*        transform: rotate(0deg);*/
+/*    }*/
+/*    100% {*/
+/*        -webkit-transform: rotate(360deg);*/
+/*        -ms-transform: rotate(360deg);*/
+/*        transform: rotate(360deg);*/
+/*    }*/
+/*}*/
 
 /*==============================================*/
 /*                                   pre-loader End ===============================================*/
@@ -172,7 +173,12 @@ nav {
     width: 100%;
 }
 
+.navbar-nav .nav-item .active
+.stiky {
+    position: fixed !important;
+    background-color: #222222;
 
+}
 /*==============================================*/
 /*                                   Nav-bar End ===============================================*/
 /*==============================================*/
@@ -200,6 +206,10 @@ nav {
 /*                                   Small-Nav-bar End ===============================================*/
 /*==============================================*/
 /*                                   Banner-Part Start ===============================================*/
+#banner-part {
+    position: relative;
+}
+
 #banner-part .banner {
     background: url("../images/b_bg.png") no-repeat center;
     background-size: cover;
@@ -284,59 +294,57 @@ nav {
 
 }
 
-/*=============================slider-arrow=============================== */
-#banner-part .overlay .arrow-prev {
-    width: 40px;
+#banner-part .prev {
     height: 40px;
-    background-color: #fff;
-    border-radius: 50%;
-    display: inline-block;
-    position: absolute;
-    top: 50%;
-    left: 30px;
-    transition: .4s;
-
-}
-
-#banner-part .overlay .arrow-next {
     width: 40px;
-    height: 40px;
-    background-color: #fff;
-    border-radius: 50%;
-    display: inline-block;
-    position: absolute;
-    top: 50%;
-    right: 30px;
-    transition: .4s;
-}
-
-#banner-part .overlay .arrow-prev i {
-    color: #000;
+    border: 1px solid black;
+    text-align: center;
     font-size: 30px;
     line-height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 45px;
+    transform: translateY(-50%);
     transition: 0.4s;
+    z-index: 1;
+    display: inline-block;
+    color: black;
+    background-color: #fff;
+
+
 }
 
-#banner-part .overlay .arrow-next i {
-    color: #000;
+#banner-part .next {
+    height: 40px;
+    width: 40px;
+    border: 1px solid black;
+    text-align: center;
     font-size: 30px;
-    transition: .4s;
     line-height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right: 45px;
+    transform: translateY(-50%);
+    transition: 0.4s;
+    z-index: 1;
+    display: inline-block;
+    color: black;
+    background-color: #fff;
 
 
 }
 
-#banner-part .overlay .arrow-prev:hover {
-    background: rgb(254, 198, 0);
+#banner-part .prev:hover {
+    color: black;
+    background-color: rgb(254, 198, 0);
 }
 
-#banner-part .overlay .arrow-next:hover {
-    background: rgb(254, 198, 0);
+#banner-part .next:hover {
+    color: black;
+    background-color: rgb(254, 198, 0);
 }
-
-/*=================================slider-end=============================*/
-
-
 /*==============================================*/
 /*                                   Banner-Part End ===============================================*/
 /*==============================================*/
@@ -718,7 +726,7 @@ nav {
 }
 
 #service-part .container .service-slider .rt .box {
-    left: 96%;
+    left: 95%;
 }
 
 #service-part .container .service-slider .prev:hover {
@@ -1176,8 +1184,9 @@ nav {
     top: 0;
     left: 0;
     background-color: rgba(254, 198, 0, 0.4);
-    opacity: 0;
+    /*opacity: 0;*/
     transition: 0.4s;
+    transform: scale(0);
 }
 
 #team-part .team-tab .img-overlay span {
@@ -1239,7 +1248,11 @@ nav {
 }
 
 #team-part .team-tab:hover .img-overlay {
-    opacity: 1;
+    /*opacity: 1;*/
+    transform: scale(1);
+    /*height: 100%;*/
+    /*width: 100%;*/
+
 }
 
 #team-part .team-tab:hover .icon {
@@ -1274,6 +1287,7 @@ nav {
     line-height: 100px;
     padding: 0 10px;
     transition: 0.4s;
+    margin: 0 5px;
 
 }
 
@@ -1285,6 +1299,9 @@ nav {
     transform: skewY(3deg);
 }
 
+#theme .slick-center {
+    border-color: rgb(254, 198, 0);
+}
 /*==============================================*/
 /*                                  theme-forest-part start ===============================================*/
 /*==============================================*/
@@ -1305,7 +1322,6 @@ nav {
 
 #footer {
     background-color: #222222;
-    padding: 30px 0;
     position: relative;
     margin-top: 50px;
 }
@@ -1337,7 +1353,7 @@ nav {
 
 #footer::after {
     width: 100%;
-    height: 140px;
+    height: 130px;
     content: "";
     position: absolute;
     top: -25%;
@@ -1350,7 +1366,7 @@ nav {
 
 #footer .footer-mid {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 40px;
 
 }
 
@@ -1400,3 +1416,21 @@ nav {
 
 /*==============================================*/
 /*                                  footer-part end ===============================================*/
+
+/*============================================================*/
+/*                                                 back-top================================================*/
+.back-top {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    background-color: rgb(254, 198, 0);
+    z-index: 222;
+    position: fixed;
+    right: 45px;
+    bottom: 100px;
+    cursor: pointer;
+
+}
