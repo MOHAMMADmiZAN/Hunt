@@ -177,3 +177,14 @@ $('body').scrollspy({
 //     $($(this).attr('href'))[0].scrollIntoView();
 //     scrollBy(0, -offset);
 // });
+// $(window).on('activate.bs.scrollspy', function (e,obj) {
+//     console.log("This event is firing...",e);
+//
+//
+//
+// });
+
+//preloader//
+$(window).on("load", function () {
+    $("#preloader").fadeOut(800);
+});
