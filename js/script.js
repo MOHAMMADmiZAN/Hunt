@@ -111,7 +111,7 @@ $('.nav-item a').on('click', function () {
         target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
         if (target.length) {
             html_body.animate({
-                scrollTop: target.offset().top - 80
+                scrollTop: target.offset().top - 86
             }, 1500);
             return false;
         }
@@ -159,7 +159,7 @@ $('.th-slide').slick({
 });
 
 
-scroolpy
+// scroolpy
 $('body').scrollspy({
     target: '.navbar',
     offset: 100
@@ -169,8 +169,9 @@ $('body').scrollspy({
 // $('body').data().scrollspy.options.offset = offsetValue;
 // // force scrollspy to recalculate the offsets to your targets
 // $('body').data().scrollspy.process();
+
+
 // var offset = 80;
-// //
 // $('.navbar li a').click(function(event) {
 //     event.preventDefault();
 //     $($(this).attr('href'))[0].scrollIntoView();
