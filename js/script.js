@@ -104,10 +104,10 @@ $(document).ready(
     )
 );
 // animation scroll js
-var html_body = $('html, body');
+let html_body = $('html, body');
 $('.nav-item a').on('click', function () {
-    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-        var target = $(this.hash);
+    if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
+        let target = $(this.hash);
         target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
         if (target.length) {
             html_body.animate({
@@ -117,6 +117,7 @@ $('.nav-item a').on('click', function () {
         }
     }
 });
+
 
 $(document).ready(
     //back to top fadetoogle//
@@ -162,7 +163,7 @@ $('.th-slide').slick({
 // scroolpy
 $('body').scrollspy({
     target: '.navbar',
-    offset: 100
+    offset: 50
 })
 
 // offsetValue = 40;
@@ -186,5 +187,6 @@ $('body').scrollspy({
 
 //preloader//
 $(window).on("load", function () {
-    $("#preloader").fadeOut(800);
+    $("#preloader").fadeOut('800');
 });
+
