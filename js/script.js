@@ -10,7 +10,7 @@ $('#banner-part').slick({
 
 });
 // venobox//
-$(document).ready(function () {
+$(document).ready(() => {
     $('.venobox').venobox(
         {
             spinner: 'wandering-cubes',
@@ -93,7 +93,7 @@ $('.up').counterUp({
 //stiky-header//
 $(document).ready(
     $(window).scroll(
-        function () {
+        () => {
             if ($(window).scrollTop() > 300) {
                 $('.st-menu').addClass('stiky')
             } else {
@@ -122,7 +122,7 @@ $('.nav-item a').on('click', function () {
 $(document).ready(
     //back to top fadetoogle//
     $(window).scroll(
-        function () {
+        () => {
             if ($(window).scrollTop() > 100) {
                 $('.back-top').fadeIn();
 
@@ -138,7 +138,7 @@ $(document).ready(
 $(document).ready(
     //back to top effect//
     $('.back-top').click(
-        function () {
+        () => {
             $('html,body').animate({scrollTop: 0}, 1500);
 
         }
@@ -186,7 +186,5 @@ $('body').scrollspy({
 // });
 
 //preloader//
-$(window).on("load", function () {
-    $("#preloader").fadeOut('800');
-});
+$(window).on("load", () => $("#preloader").fadeOut('800'));
 
