@@ -181,6 +181,7 @@ nav {
 .navbar-nav .nav-item .active::after {
     width: 100%;
 
+
 }
 
 
@@ -940,7 +941,7 @@ nav {
     background-color: #fff;
     position: absolute;
     top: 50%;
-    left: -1%;
+    left: -3%;
     transform: translateY(-50%) rotate(45deg);
     border-radius: 10px;
 
