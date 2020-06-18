@@ -90,19 +90,11 @@ $('.up').counterUp({
     delay: 10,
     time: 1000
 });
-//stiky-header//
-$(document).ready(
-    $(window).scroll(
-        () => {
-            if ($(window).scrollTop() > 300) {
-                $('.st-menu').addClass('stiky')
-            } else {
-                $('.st-menu').removeClass('stiky')
-            }
 
-        }
-    )
-);
+
+//stiky-header//
+$(window).scroll(() => $(window).scrollTop() > 300 ? $('.st-menu').addClass('stiky') : $('.st-menu').removeClass('stiky'))
+
 // animation scroll js
 let html_body = $('html, body');
 $('.nav-item a').on('click', function () {
@@ -119,32 +111,12 @@ $('.nav-item a').on('click', function () {
 });
 
 
-$(document).ready(
+
     //back to top fadetoogle//
-    $(window).scroll(
-        () => {
-            if ($(window).scrollTop() > 100) {
-                $('.back-top').fadeIn();
-
-
-            } else {
-                $('.back-top').fadeOut();
-            }
-
-
-        }
-    )
-);
-$(document).ready(
+$(window).scroll(() => $(window).scrollTop() > 100 ? $('.back-top').fadeIn() : $('.back-top').fadeOut());
     //back to top effect//
-    $('.back-top').click(
-        () => {
+$('.back-top').click(() => $('html,body').animate({scrollTop: 0}, 1500));
 
-            $('html,body').animate({scrollTop: 0}, 1500);
-
-        }
-    )
-);
 
 $('.th-slide').slick({
     dots: false,
