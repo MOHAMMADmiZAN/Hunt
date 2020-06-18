@@ -90,10 +90,12 @@ $('.up').counterUp({
     delay: 10,
     time: 1000
 });
-
-
+/// variables////
+let win = $(window)
+let stk = $('.st-menu')
+let b2b = $('.back-top')
 //stiky-header//
-$(window).scroll(() => $(window).scrollTop() > 300 ? $('.st-menu').addClass('stiky') : $('.st-menu').removeClass('stiky'))
+win.scroll(() => win.scrollTop() > 300 ? stk.addClass('stiky') : stk.removeClass('stiky'));
 
 // animation scroll js
 let html_body = $('html, body');
@@ -111,11 +113,11 @@ $('.nav-item a').on('click', function () {
 });
 
 
+//back to top fadetoogle//
 
-    //back to top fadetoogle//
-$(window).scroll(() => $(window).scrollTop() > 100 ? $('.back-top').fadeIn() : $('.back-top').fadeOut());
-    //back to top effect//
-$('.back-top').click(() => $('html,body').animate({scrollTop: 0}, 1500));
+win.scroll(() => win.scrollTop() > 100 ? b2b.fadeIn() : b2b.fadeOut());
+//back to top effect//
+b2b.click(() => $('html,body').animate({scrollTop: 0}, 1500));
 
 
 $('.th-slide').slick({
@@ -167,7 +169,7 @@ $('body').scrollspy({
 // });
 
 //preloader//
-$(window).on("load", () => $("#preloader").fadeOut('800'));
+win.on("load", () => $("#preloader").fadeOut('800'));
 
 
 
