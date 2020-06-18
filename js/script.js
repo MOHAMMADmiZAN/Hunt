@@ -94,8 +94,15 @@ $('.up').counterUp({
 let win = $(window)
 let stk = $('.st-menu')
 let b2b = $('.back-top')
+
+
 //stiky-header//
 win.scroll(() => win.scrollTop() > 300 ? stk.addClass('stiky') : stk.removeClass('stiky'));
+// scroolpy
+$('body').scrollspy({
+    target: '.navbar',
+    offset: 100
+});
 
 // animation scroll js
 let html_body = $('html, body');
@@ -111,10 +118,7 @@ $('.nav-item a').on('click', function () {
         }
     }
 });
-
-
 //back to top fadetoogle//
-
 win.scroll(() => win.scrollTop() > 100 ? b2b.fadeIn() : b2b.fadeOut());
 //back to top effect//
 b2b.click(() => $('html,body').animate({scrollTop: 0}, 1500));
@@ -135,11 +139,6 @@ $('.th-slide').slick({
 });
 
 
-// scroolpy
-$('body').scrollspy({
-    target: '.navbar',
-    offset: 100
-})
 // Smooth Scrolling //
 // $('a[href*="#"]').on('click', function (e) {
 //     "use strict";
