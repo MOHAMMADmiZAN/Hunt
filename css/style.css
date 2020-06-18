@@ -941,7 +941,7 @@ nav {
     background-color: #fff;
     position: absolute;
     top: 50%;
-    left: -3%;
+    left: -2%;
     transform: translateY(-50%) rotate(45deg);
     border-radius: 10px;
 

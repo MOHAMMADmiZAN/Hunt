@@ -139,6 +139,7 @@ $(document).ready(
     //back to top effect//
     $('.back-top').click(
         () => {
+
             $('html,body').animate({scrollTop: 0}, 1500);
 
         }
@@ -165,11 +166,12 @@ $('body').scrollspy({
     target: '.navbar',
     offset: 100
 })
-//Smooth Scrolling //
-// $('a[href*="#"]').on('click', function(e){
+// Smooth Scrolling //
+// $('a[href*="#"]').on('click', function (e) {
+//     "use strict";
 //     $('html,body').animate({
 //         scrollTop: $($(this).attr('href')).offset().top - 88
-//     },1500);
+//     }, 1500);
 //     e.preventDefault();
 // });
 
