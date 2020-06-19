@@ -53,11 +53,11 @@ $('.left_slide').slick({
     centerPadding: 0,
     prevArrow: '<i class="fa fa-angle-up prev" aria-hidden="true"></i>',
     nextArrow: '<i class="fas fa-angle-down next"></i>',
-    asNavFor: '.right_slide',
+    asNavFor: '.tm_text',
 
 
 });
-$('.right_slide').slick({
+$('.tm_text').slick({
     dots: false,
     infinite: true,
     speed: 300,
@@ -115,7 +115,7 @@ $('.nav-item a').on('click', function () {
         target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
         if (target.length) {
             html_body.animate({
-                scrollTop: target.offset().top - 87
+                scrollTop: target.offset().top - 88
             }, 1500);
             return false;
         }
