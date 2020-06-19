@@ -24,20 +24,6 @@ $(document).ready(() => {
         }
     );
 });
-// preloader-start//
-// let preloader = document.getElementById('preloader');
-//
-// function pre() {
-//     preloader.style.display = 'none';
-// }
-// function pre() {
-//     setTimeout(function () {
-//         $('#preloader').fadeOut();
-//         // $('#loader').fadeOut('slow');
-//     }, 4000);
-// }
-
-// preloader-end //
 // service Part Slider //
 $('.service-slider').slick({
     dots: false,
@@ -90,40 +76,6 @@ $('.up').counterUp({
     delay: 10,
     time: 1000
 });
-/// variables////
-let win = $(window)
-let stk = $('.st-menu')
-let b2b = $('.back-top')
-
-
-//stiky-header//
-win.scroll(() => win.scrollTop() > 300 ? stk.addClass('stiky') : stk.removeClass('stiky'));
-// scroolpy
-$('body').scrollspy({
-    target: '.navbar',
-    offset: 100
-});
-
-// animation scroll js
-let html_body = $('html, body');
-$('.nav-item a').on('click', function () {
-    if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
-        let target = $(this.hash);
-        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-        if (target.length) {
-            html_body.animate({
-                scrollTop: target.offset().top - 87
-            }, 1500);
-            return false;
-        }
-    }
-});
-//back to top fadetoogle//
-win.scroll(() => win.scrollTop() > 100 ? b2b.fadeIn() : b2b.fadeOut());
-//back to top effect//
-b2b.click(() => $('html,body').animate({scrollTop: 0}, 1500));
-
-
 $('.th-slide').slick({
     dots: false,
     infinite: true,
@@ -137,6 +89,43 @@ $('.th-slide').slick({
     centerPadding: '0',
     focusOnSelect: true,
 });
+
+
+/// variables////
+const win = $(window);
+const html_body = $('html, body');
+const stk = $('.st-menu');
+const b2b = $('.back-top');
+const c_stk = 'stiky';
+const bdy = $('body');
+
+
+//stiky-header//
+win.scroll(() => win.scrollTop() > 300 ? stk.addClass(c_stk) : stk.removeClass(c_stk));
+// scroolpy
+bdy.scrollspy({
+    target: '.navbar',
+    offset: 100
+});
+
+// animation scroll js
+$('.nav-item a').on('click', function () {
+    if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
+        let target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+        if (target.length) {
+            html_body.animate({
+                scrollTop: target.offset().top - 87
+            }, 1500);
+            return false;
+        }
+    }
+});
+
+//back to top fadetoogle//
+win.scroll(() => win.scrollTop() > 100 ? b2b.fadeIn() : b2b.fadeOut());
+//back to top effect//
+b2b.click(() => html_body.animate({scrollTop: 0}, 1500));
 
 
 // Smooth Scrolling //
