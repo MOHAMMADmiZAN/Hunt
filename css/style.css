@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
 
@@ -273,6 +273,7 @@ nav {
     background: transparent;
     border: 1px solid white;
     margin: 30px 10px;
+    outline: none;
 }
 
 #banner-part .overlay .container .button button a {
@@ -283,7 +284,7 @@ nav {
     border: 1px solid rgb(254, 198, 0);
     background: rgb(254, 198, 0);
     transition: .4s;
-
+    outline: none;
 }
 
 #banner-part .overlay .container .button button:hover a {
@@ -358,6 +359,7 @@ nav {
     color: black;
     background-color: rgb(254, 198, 0);
 }
+
 /*==============================================*/
 /*                                   Banner-Part End ===============================================*/
 /*==============================================*/
@@ -400,6 +402,7 @@ nav {
     border-radius: 5px;
     position: relative;
     transition: .4s;
+    z-index: 222;
 }
 
 #about-us .container .text h3 {
@@ -1330,6 +1333,7 @@ nav {
 #theme .slick-center {
     border-color: rgb(254, 198, 0);
 }
+
 /*==============================================*/
 /*                                  theme-forest-part start ===============================================*/
 /*==============================================*/
