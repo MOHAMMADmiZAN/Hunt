@@ -158,11 +158,3 @@ b2b.click(() => html_body.animate({scrollTop: 0}, 1500));
 
 //preloader//
 win.on("load", () => $("#preloader").fadeOut('800'));
-
-
-
-
-
-
-
-
