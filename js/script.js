@@ -166,7 +166,3 @@ win.on("load", () => $("#preloader").fadeOut('800'));
 
 
 
-
-
-
-
