@@ -68,6 +68,7 @@ $('.tm_text').slick({
     centerPadding: 0,
     asNavFor: '.left_slide',
     arrows: false,
+    fade: true,
 
 
 });

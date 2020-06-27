@@ -1,0 +1,23 @@
+/*==============================================*/
+/*                                   Small-Nav-bar start ===============================================*/
+
+
+@media (min-width: 576px) and (max-width: 991px) {
+    nav {
+        background: #000000;
+    }
+
+    nav .container button {
+        color: #ffffff;
+        outline: none;
+    }
+
+    nav .container button:hover {
+        color: rgb(254, 198, 0);
+        outline: none;
+    }
+
+}
+
+/*==============================================*/
+/*                                   Small-Nav-bar End ===============================================*/
