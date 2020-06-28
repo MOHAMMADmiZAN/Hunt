@@ -39,9 +39,7 @@ $('#banner-part').slick({
 
             }
         }
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
+
     ]
 
 });
@@ -102,9 +100,7 @@ $('.service-slider').slick({
 
             }
         }
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
+
     ]
 
 
@@ -156,9 +152,7 @@ $('.left_slide').slick({
 
             }
         }
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
+
     ]
 
 
@@ -200,9 +194,7 @@ $('.tm_text').slick({
 
             }
         }
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
+
     ]
 
 
@@ -260,9 +252,7 @@ $('.th-slide').slick({
 
             }
         }
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
+
     ]
 
 });
