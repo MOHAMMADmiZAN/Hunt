@@ -823,7 +823,7 @@ nav {
     color: white;
 }
 
-#tm_slide .container .left_slide .slick-center {
+#tm_slide .container .left_slide .slick-center .images {
     transform: scale(1.2);
     background-color: rgb(254, 198, 0);
     transition: 0.4s;
@@ -938,11 +938,12 @@ nav {
 #price-part .price-tab {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-top: 50px;
 }
 
 #price-part .price-tab .price-item {
-    width: 32%;
+    width: 360px;
     background-color: #f1f1f1;
 }
 

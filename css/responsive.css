@@ -134,9 +134,55 @@
         display: none;
     }
 
-    #tm-shape {
-        /*display: none;*/
+    #tm_slide .images {
+        margin: 30px auto;
     }
+
+    #tm_slide .right_slide .tm_text {
+        height: auto;
+    }
+
+    #tm-shape {
+        display: none;
+    }
+
+    #tm_slide .box {
+        display: none;
+    }
+
+    #price-part {
+        margin: 20px 5px;
+    }
+
+    #price-part .price-tab {
+        justify-content: center;
+    }
+
+    #price-part .price-tab .price-item {
+        margin-top: 10px;
+
+    }
+
+    #counter {
+        height: auto;
+    }
+
+    #counter .counter-tab .c-text {
+        margin-top: 5px;
+    }
+
+    #team-part .res {
+        justify-content: center !important;
+    }
+
+    #theme {
+        height: auto;
+    }
+
+    #footer::after {
+        top: -15%;
+    }
+
 }
 
 /*Extra Small-bar End ===============================================*/
