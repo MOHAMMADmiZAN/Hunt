@@ -511,3 +511,61 @@
 
 
 /*medium-dev-end*/
+/* large-start*/
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    #about-us .container .round {
+        width: 295px;
+        height: 295px;
+        margin: 0 auto;
+    }
+
+    #about-us .container .round .img {
+        width: 260px;
+        height: 260px;
+    }
+
+    #about-us .container .text p {
+        width: auto;
+    }
+
+    #about-us .container .text .dl {
+        right: -39px;
+    }
+
+    #about-us .container .text .dr {
+        left: -33px;
+    }
+
+    #about-us .container .text .dd {
+        top: -53px;
+    }
+
+    #tm_slide .images {
+        margin: 30px auto;
+    }
+
+    #price-part .price-tab {
+        justify-content: center;
+    }
+
+    #price-part .price-tab .price-item {
+        margin: 20px;
+    }
+
+    #counter .c-text p {
+        text-align: center;
+    }
+
+    #team-part .res {
+        justify-content: center !important;
+    }
+
+    #team-part .team-tab {
+        margin: 40px;
+    }
+
+}
+
+
+/*large-end*/
