@@ -69,6 +69,37 @@ $('.service-slider').slick({
     centerPadding: 0,
     prevArrow: '<i class="fa fa-angle-up prev" aria-hidden="true"></i>',
     nextArrow: '<i class="fas fa-angle-down next"></i>',
+    responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: true
+            }
+        },
+        {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+            }
+        },
+        {
+            breakpoint: 576,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: true,
+
+
+            }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+    ]
 
 
 });
@@ -86,6 +117,37 @@ $('.left_slide').slick({
     prevArrow: '<i class="fa fa-angle-up prev" aria-hidden="true"></i>',
     nextArrow: '<i class="fas fa-angle-down next"></i>',
     asNavFor: '.tm_text',
+    responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: true
+            }
+        },
+        {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+            }
+        },
+        {
+            breakpoint: 576,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: true,
+
+
+            }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+    ]
 
 
 });
@@ -100,7 +162,38 @@ $('.tm_text').slick({
     centerPadding: 0,
     asNavFor: '.left_slide',
     arrows: false,
-    fade: true,
+    // fade: true,
+    responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: true
+            }
+        },
+        {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+            }
+        },
+        {
+            breakpoint: 576,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                // arrows: true,
+
+
+            }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+    ]
 
 
 });

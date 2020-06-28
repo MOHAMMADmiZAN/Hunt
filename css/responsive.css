@@ -104,7 +104,39 @@
     #pro-shape {
         display: none;
     }
+
+    #service-part .container .line {
+        display: none;
+    }
+
+    #service-part .container .service-slider .service-name {
+        justify-content: center;
+        padding: 30px;
+    }
+
+    #service-part .container .service-slider .rt .service-name {
+        justify-content: center;
+    }
+
+    #service-part .container .service-slider .service-img {
+        padding: 30px;
+    }
+
+    #service-part .container .service-slider .service-details {
+        padding: 30px;
+    }
+
+    #service-part .container .service-slider .slick-center .service-details {
+        filter: drop-shadow(0 0 0 black);
+    }
+
+    #tm_slide .line {
+        display: none;
+    }
+
+    #tm-shape {
+        /*display: none;*/
+    }
 }
 
-/*==============================================*/
-/*                                   Extra Small-bar End ===============================================*/
+/*Extra Small-bar End ===============================================*/
