@@ -1,10 +1,11 @@
 /*==============================================*/
-/*                                   Small-Nav-bar start ===============================================*/
+/*                                   Extra Small-bar start ===============================================*/
 
 
-@media (min-width: 576px) and (max-width: 991px) {
+@media (min-width: 320px) and (max-width: 575px) {
     nav {
         background: #000000;
+        text-align: center;
     }
 
     nav .container button {
@@ -17,7 +18,93 @@
         outline: none;
     }
 
+    .navbar-nav .nav-item a {
+        margin: 10px;
+    }
+
+    .navbar-nav .nav-item a::after {
+        top: 57px;
+    }
+
+    .title h3 {
+        font-size: 25px;
+    }
+
+    .title p {
+        width: auto;
+        font-size: 13px;
+        margin: 15px 0;
+    }
+
+    #banner-part .overlay {
+        padding: 140px 0 60px 0;
+    }
+
+    #banner-part .overlay .container .text h2 {
+        font-family: 'Raleway', sans-serif;
+        font-size: 26px;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+
+    #banner-part .overlay .container .text h1 {
+        font-size: 35px;
+    }
+
+    #banner-part .overlay .container .text p {
+        font-size: 13px;
+        width: auto;
+    }
+
+    #banner-part .overlay .container .button button {
+        width: 120px;
+    }
+
+    #about-us .container .round {
+        width: 280px;
+        height: 280px;
+        margin: 0 auto;
+    }
+
+    #about-us .container .round .img {
+        width: 240px;
+        height: 240px;
+    }
+
+    #about-us .container .text .triangle {
+        display: none;
+    }
+
+    #about-us .container .text .dot {
+        display: none;
+    }
+
+    #about-us .container .text p {
+        width: auto;
+        font-size: 13px;
+        margin-top: 15px;
+    }
+
+    #about-us .container .text {
+        margin: 10px 0;
+    }
+
+    #portfolio .title {
+        padding: 0;
+    }
+
+    #portfolio .container .images {
+        margin-top: 0;
+    }
+
+    #portfolio .overlay {
+        padding: 20px 0;
+    }
+
+    #pro-shape {
+        display: none;
+    }
 }
 
 /*==============================================*/
-/*                                   Small-Nav-bar End ===============================================*/
+/*                                   Extra Small-bar End ===============================================*/
