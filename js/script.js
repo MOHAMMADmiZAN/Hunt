@@ -9,12 +9,13 @@ $('#banner-part').slick({
     nextArrow: '<i class="fas fa-arrow-right next"></i>',
     responsive: [
         {
-            breakpoint: 1024,
+            breakpoint: 992,
             settings: {
-                slidesToShow: 3,
-                slidesToScroll: 3,
+                slidesToShow: 1,
+                slidesToScroll: 1,
                 infinite: true,
-                dots: true
+                dots: false,
+                arrows: true,
             }
         },
         {
@@ -218,8 +219,8 @@ $('.th-slide').slick({
     slidesToShow: 5,
     slidesToScroll: 1,
     arrows: false,
-    // autoplay: true,
-    // autoplaySpeed: 2000,
+    autoplay: true,
+    autoplaySpeed: 2000,
     centerMode: true,
     centerPadding: '0',
     focusOnSelect: true,
@@ -230,14 +231,14 @@ $('.th-slide').slick({
                 slidesToShow: 3,
                 slidesToScroll: 3,
                 infinite: true,
-                dots: true
+                dots: false,
             }
         },
         {
-            breakpoint: 600,
+            breakpoint: 768,
             settings: {
                 slidesToShow: 2,
-                slidesToScroll: 2
+                slidesToScroll: 1
             }
         },
         {

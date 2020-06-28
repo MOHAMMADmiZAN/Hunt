@@ -175,6 +175,10 @@
         justify-content: center !important;
     }
 
+    #team-part .team-tab {
+        margin-left: 2px;
+    }
+
     #theme {
         height: auto;
     }
@@ -191,7 +195,7 @@
 /*smalll dev-start*/
 
 
-@media (min-width: 576px) and (max-width: 768px) {
+@media (min-width: 576px) and (max-width: 767px) {
 
 
     nav {
@@ -317,8 +321,46 @@
         display: none;
     }
 
+    #price-part {
+        margin: 20px 5px;
+    }
+
+    #price-part .price-tab {
+        justify-content: center;
+    }
+
+    #price-part .price-tab .price-item {
+        margin-top: 10px;
+
+    }
+
+    #counter {
+        height: auto;
+    }
+
+    #counter .counter-tab .c-text {
+        margin-top: 5px;
+    }
+
+    #team-part .res {
+        justify-content: center !important;
+    }
+
+    #team-part .team-tab {
+        margin-left: 2px;
+    }
+
+    #footer::after {
+        top: -15%;
+    }
+
+}
+
+/*smalll dev-End*/
+/*medium-dev-start*/
+@media (min-width: 768px) and(max-width: 991px) {
 
 }
 
 
-/*smalll dev-End*/
+/*medium-dev-end*/
