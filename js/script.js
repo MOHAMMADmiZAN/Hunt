@@ -226,6 +226,15 @@ $('.th-slide').slick({
     focusOnSelect: true,
     responsive: [
         {
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: false,
+            }
+        },
+        {
             breakpoint: 992,
             settings: {
                 slidesToShow: 3,
