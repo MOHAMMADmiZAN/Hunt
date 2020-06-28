@@ -537,8 +537,12 @@
         left: -33px;
     }
 
+    #about-us .container .text .du {
+        bottom: -47px;
+    }
+
     #about-us .container .text .dd {
-        top: -53px;
+        top: -47px
     }
 
     #tm_slide .images {

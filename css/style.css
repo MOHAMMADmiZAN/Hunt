@@ -435,7 +435,7 @@ nav {
 
 #about-us .container .text .dl {
     position: absolute;
-    right: -41px;
+    right: -39px;
     top: 50%;
     transform: translateY(-50%);
 }
@@ -449,7 +449,7 @@ nav {
 
 #about-us .container .text .dr {
     position: absolute;
-    left: -41px;
+    left: -37px;
     top: 50%;
     transform: translateY(-50%);
 }
