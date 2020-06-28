@@ -4,7 +4,7 @@
 
 @media (min-width: 320px) and (max-width: 575px) {
     nav {
-        background: #000000;
+        background: #222222;
         text-align: center;
     }
 
@@ -199,7 +199,7 @@
 
 
     nav {
-        background: #000000;
+        background: #222222;
         text-align: center;
     }
 
@@ -360,7 +360,7 @@
 /*medium-dev-start*/
 @media (min-width: 768px) and ( max-width: 991px) {
     nav {
-        background: #000000;
+        background: #222222;
         text-align: center;
     }
 
