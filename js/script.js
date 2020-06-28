@@ -18,10 +18,13 @@ $('#banner-part').slick({
             }
         },
         {
-            breakpoint: 600,
+            breakpoint: 768,
             settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                autoplay: true,
+                autoplaySpeed: 3000,
             }
         },
         {
@@ -80,10 +83,11 @@ $('.service-slider').slick({
             }
         },
         {
-            breakpoint: 600,
+            breakpoint: 768,
             settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: true,
             }
         },
         {
@@ -128,10 +132,13 @@ $('.left_slide').slick({
             }
         },
         {
-            breakpoint: 600,
+            breakpoint: 768,
             settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                autoplay: true,
+                autoplaySpeed: 4000
             }
         },
         {
@@ -139,7 +146,9 @@ $('.left_slide').slick({
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,
-                arrows: true,
+                arrows: false,
+                autoplay: true,
+                autoplaySpeed: 4000,
 
 
             }
@@ -174,10 +183,10 @@ $('.tm_text').slick({
             }
         },
         {
-            breakpoint: 600,
+            breakpoint: 768,
             settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2
+                slidesToShow: 1,
+                slidesToScroll: 1,
             }
         },
         {

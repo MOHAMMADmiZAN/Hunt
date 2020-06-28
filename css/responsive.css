@@ -186,3 +186,139 @@
 }
 
 /*Extra Small-bar End ===============================================*/
+
+
+/*smalll dev-start*/
+
+
+@media (min-width: 576px) and (max-width: 768px) {
+
+
+    nav {
+        background: #000000;
+        text-align: center;
+    }
+
+    nav .container button {
+        color: #ffffff;
+        outline: none;
+    }
+
+    nav .container button:hover {
+        color: rgb(254, 198, 0);
+        outline: none;
+    }
+
+    .navbar-nav .nav-item a {
+        margin: 10px;
+    }
+
+    .navbar-nav .nav-item a::after {
+        top: 57px;
+    }
+
+    .title h3 {
+        font-size: 25px;
+    }
+
+    .title p {
+        width: auto;
+        font-size: 13px;
+        margin: 15px 0;
+    }
+
+    #banner-part .overlay .container .text p {
+        width: auto;
+    }
+
+    #about-us .container .round {
+        width: 280px;
+        height: 280px;
+        margin: 0 auto;
+    }
+
+    #about-us .container .round .img {
+        width: 240px;
+        height: 240px;
+    }
+
+    #about-us .container .text .triangle {
+        display: none;
+    }
+
+    #about-us .container .text .dot {
+        display: none;
+    }
+
+    #about-us .container .text p {
+        width: auto;
+        font-size: 13px;
+        margin-top: 15px;
+    }
+
+    #about-us .container .text {
+        margin: 10px 0;
+    }
+
+    #pro-shape {
+        display: none;
+    }
+
+    #portfolio .title {
+        padding: 0;
+    }
+
+    #portfolio .container .images {
+        margin-top: 0;
+    }
+
+    #service-part .container .line {
+        display: none;
+    }
+
+    #service-part .container .service-slider .service-name {
+        justify-content: center;
+        padding: 30px;
+    }
+
+    #service-part .container .service-slider .rt .service-name {
+        justify-content: center;
+    }
+
+    #service-part .container .service-slider .service-img {
+        padding: 30px;
+    }
+
+    #service-part .container .service-slider .service-details {
+        padding: 30px;
+    }
+
+    #service-part .container .service-slider .slick-center .service-details {
+        filter: drop-shadow(0 0 0 black);
+    }
+
+    #tm_slide .line {
+        display: none;
+    }
+
+    #tm_slide .images {
+        margin: 30px auto;
+    }
+
+    #tm_slide .right_slide .tm_text {
+        height: auto;
+    }
+
+    #tm-shape {
+        display: none;
+    }
+
+    #tm_slide .box {
+        display: none;
+    }
+
+
+}
+
+
+/*smalll dev-End*/
