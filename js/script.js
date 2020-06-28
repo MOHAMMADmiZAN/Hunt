@@ -75,12 +75,13 @@ $('.service-slider').slick({
     nextArrow: '<i class="fas fa-angle-down next"></i>',
     responsive: [
         {
-            breakpoint: 1024,
+            breakpoint: 992,
             settings: {
-                slidesToShow: 3,
-                slidesToScroll: 3,
+                slidesToShow: 1,
+                slidesToScroll: 1,
                 infinite: true,
-                dots: true
+                dots: false,
+                arrows: true,
             }
         },
         {
@@ -124,12 +125,13 @@ $('.left_slide').slick({
     asNavFor: '.tm_text',
     responsive: [
         {
-            breakpoint: 1024,
+            breakpoint: 992,
             settings: {
-                slidesToShow: 3,
-                slidesToScroll: 3,
-                infinite: true,
-                dots: true
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                autoplay: true,
+                autoplaySpeed: 4000
             }
         },
         {
@@ -175,12 +177,10 @@ $('.tm_text').slick({
     // fade: true,
     responsive: [
         {
-            breakpoint: 1024,
+            breakpoint: 992,
             settings: {
-                slidesToShow: 3,
-                slidesToScroll: 3,
-                infinite: true,
-                dots: true
+                slidesToShow: 1,
+                slidesToScroll: 1,
             }
         },
         {
@@ -226,10 +226,10 @@ $('.th-slide').slick({
     focusOnSelect: true,
     responsive: [
         {
-            breakpoint: 1024,
+            breakpoint: 992,
             settings: {
                 slidesToShow: 3,
-                slidesToScroll: 3,
+                slidesToScroll: 1,
                 infinite: true,
                 dots: false,
             }
@@ -290,10 +290,10 @@ $('.nav-item a').on('click', function () {
     }
 });
 
-// //back to top fadetoogle//
-// win.scroll(() => win.scrollTop() > 100 ? b2b.fadeIn() : b2b.fadeOut());
-// //back to top effect//
-// b2b.click(() => html_body.animate({scrollTop: 0}, 1500));
+//back to top fadetoogle//
+win.scroll(() => win.scrollTop() > 100 ? b2b.fadeIn() : b2b.fadeOut());
+//back to top effect//
+b2b.click(() => html_body.animate({scrollTop: 0}, 1500));
 
 
 // Smooth Scrolling //
