@@ -163,7 +163,7 @@ $('.tm_text').slick({
     speed: 300,
     slidesToShow: 1,
     slidesToScroll: 1,
-    vertical: false,
+    vertical: true,
     // centerMode: true,
     // centerPadding: 0,
     asNavFor: '.left_slide',
