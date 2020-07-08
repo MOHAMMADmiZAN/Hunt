@@ -328,6 +328,4 @@ b2b.click(() => html_body.animate({scrollTop: 0}, 1500));
 win.on("load", () => $("#preloader").fadeOut('800'));
 /* always close responsive nav after click */
 
-$('.navbar-collapse ul li a').click(function () {
-    $('.navbar-toggler:visible').click();
-});
+$('.navbar-collapse ul li a').click(() => $('.navbar-toggler:visible').click());
