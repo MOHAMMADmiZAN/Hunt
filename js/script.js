@@ -286,6 +286,7 @@ $('.nav-item a').on('click', function () {
             }, 1500);
             return false;
         }
+
     }
 });
 
@@ -325,3 +326,8 @@ b2b.click(() => html_body.animate({scrollTop: 0}, 1500));
 
 //preloader//
 win.on("load", () => $("#preloader").fadeOut('800'));
+/* always close responsive nav after click */
+
+$('.navbar-collapse ul li a').click(function () {
+    $('.navbar-toggler:visible').click();
+});
