@@ -293,7 +293,7 @@ $('.nav-item a').on('click', function () {
 //back to top fadetoogle//
 win.scroll(() => win.scrollTop() > 100 ? b2b.fadeIn() : b2b.fadeOut());
 //back to top effect//
-b2b.click(() => html_body.animate({scrollTop: 0}, 1500));
+b2b.click(() => html_body.animate({scrollTop: 0}, 2500));
 
 
 // Smooth Scrolling //
@@ -327,5 +327,9 @@ b2b.click(() => html_body.animate({scrollTop: 0}, 1500));
 //preloader//
 win.on("load", () => $("#preloader").fadeOut('800'));
 /* always close responsive nav after click */
-
 $('.navbar-collapse ul li a').click(() => $('.navbar-toggler:visible').click());
+
+// aos js //
+AOS.init();
+
+
